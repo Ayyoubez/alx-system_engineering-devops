@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Prints the content of the current dir.
+#  Only the part of the name.
+
+list=$(ls)
+for l in $list; do
+  echo "$l" | cut -d '-' -f2
+done

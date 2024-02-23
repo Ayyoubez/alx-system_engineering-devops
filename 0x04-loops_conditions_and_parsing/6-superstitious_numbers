@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Prints numbers from 1 to 20 in additon to:
+#  "bas luck from China" 4th line
+#  "bas luck from Japan" 9th line
+#  "bas luck from Italy" 17th line
+
+c=1
+
+while [ $c -le 20 ]
+do
+  echo "$c"
+  case $c in
+    "4") echo "bad luck from China";;
+    "9") echo "bad luck from Japan";;
+    "17") echo "bad luck from Italy";;
+  esac
+  (( c++ ))
+done
