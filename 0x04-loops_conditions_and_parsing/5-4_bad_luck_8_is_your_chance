@@ -8,7 +8,7 @@ c=0
 
 while [ $c -lt 10 ]
 do
-  if [$c -eq 3 ]
+  if [ $c -eq 3 ]
   then
     echo "bad luck"
   elif [ $c -eq 7 ]
