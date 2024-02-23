@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m "processes_and_signals"
+git push
