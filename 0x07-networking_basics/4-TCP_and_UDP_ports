@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Prints listening port
+
+netstat -l --program
