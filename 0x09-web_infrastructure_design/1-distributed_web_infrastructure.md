@@ -19,11 +19,9 @@ Database (MySQL): Stores and manages website data, allowing the application serv
 Active-Active Setup:
 
 Both servers actively handle requests, improving performance and fault tolerance. In Active-Passive setup, one server would be on standby.
--------------------------
-Primary-Replica Cluster:
 
-Primary node handles write operations and maintains the current state of the database. Replica node(s) replicate data from the Primary node and are used for read operations and failover.
-------------------------
+-------------------------
+
 Issues:
 
 Single Points of Failure (SPOF):
