@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+#the private key and number of bits Passphrase to protect the key
+# Generate the key pair
+
+private_key="school"
+bits=4096
+passphrase="betty"
+ssh-keygen -b $bits -N $passphrase -f $private_key
+
