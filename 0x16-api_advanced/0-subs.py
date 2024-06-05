@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Subscribers Query"""
+"""Subscribers Query on a given reddit"""
 import requests
 
 
