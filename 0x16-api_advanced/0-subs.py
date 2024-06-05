@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Subscribers Query on a given reddit"""
+"""function for subscribers Query on a given reddit"""
 import requests
 
 
 def number_of_subscribers(subreddit):
-    """Return the total number """
+    """Return the total number of sucbsribers """
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     headers = {
         "User-Agent": "linux:0x16.api.advanced:v1.0.0 (by /u/bdov_)"
