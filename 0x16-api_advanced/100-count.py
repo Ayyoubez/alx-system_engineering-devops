@@ -4,14 +4,14 @@ import requests
 
 
 def count_words(subreddit, word_list, instances={}, after="", count=0):
-    """Prints counts of given words 
+    """Prints counts of given words
 
     Args:
-        subreddit (str): The subreddit 
-        word_list (list): The list of words 
-        instances (obj): Key/value pairs 
-        after (str): The parameter 
-        count (int): The parameter 
+        subreddit (str): The subreddit
+        word_list (list): The list of words
+        instances (obj): Key/value pairs
+        after (str): The parameter
+        count (int): The parameter
     """
     url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
     headers = {
@@ -23,7 +23,7 @@ def count_words(subreddit, word_list, instances={}, after="", count=0):
         "limit": 100
     }
     res = requests.get(url, headers=headers, params=params,
-                            allow_redirects=False)
+                        allow_redirects=False)
     try:
         results = res.json()
         if res.status_code == 404:
