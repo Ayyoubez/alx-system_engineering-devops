@@ -16,7 +16,7 @@ def number_of_subscribers(subreddit):
         int: The number of subscribers for the subreddit, or 0
     """
     res = requests.get(
-        "https://www.reddit.com/r/{}/about.json".format(subreddit),
+        "https://www.reddit.com/r/{subreddit}/about.json".format(subreddit),
         headers={"User-Agent": "Custom"},
     )
 
